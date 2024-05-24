@@ -1,1 +1,8 @@
-<p>card works!</p>
+<div class="card" style="width: 18rem;">
+    <img [src]="'assets/' + plato.imagen" class="card-img-top" alt="{{ plato.nombre }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ plato.nombre }}</h5>
+        <p class="card-text">{{ plato.descripcion }}</p>
+        <p class="card-text">Precio: ${{ plato.precio }}</p>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+.cabeza {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.menu {
+    background-color: #615442;
+    color: #000000;
+    height: 100px;
+    width: 100%;
+}
+
+.nav li {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.recomendados-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.recomendado {
+    flex: 1 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+}
+
+.titulos h2 {
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border-radius: 5px;
+}
