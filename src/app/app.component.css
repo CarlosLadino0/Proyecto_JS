@@ -32,3 +32,23 @@
     padding: 15px; 
     border-radius: 5px;
 }
+
+.menu {
+    background-image: url('https://img.freepik.com/foto-gratis/concepto-material-pared-fondo-madera-rasgunado-pared_53876-30226.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-size: auto;  
+    height: 200px;  
+    border-radius: 20px;
+    margin-bottom: 20px;
+        
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
