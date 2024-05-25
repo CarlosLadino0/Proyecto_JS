@@ -6,31 +6,88 @@
 <nav class="menu">
     <ul class="nav justify-content-center"> 
         <li class="nav-item">
-            <a class="nav-link" href="#">Desayunos</a>
+            <a class="nav-link" href="#desayunos" onclick="scrollToSection('desayunos')">Desayunos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Almuerzos</a>
+            <a class="nav-link" href="#almuerzos" onclick="scrollToSection('almuerzos')">Almuerzos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Comidas</a>
+            <a class="nav-link" href="#comidas" onclick="scrollToSection('comidas')">Comidas</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" >Entradas</a>
+            <a class="nav-link" href="#entradas" onclick="scrollToSection('entradas')">Entradas</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" >Menu infantil</a>
+            <a class="nav-link" href="#menuInfantil" onclick="scrollToSection('menuInfantil')">Menu infantil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" >Bebidas</a>
+            <a class="nav-link" href="#bebidas" onclick="scrollToSection('bebidas')">Bebidas</a>
         </li>
     </ul>
 </nav>
 
+
 <div class="titulos">
     <h2>Recomendados</h2>
 </div>
+
 <div class="recomendados-container">
     <div class="recomendado" *ngFor="let platoRecomendado of recomendados">
         <app-card [plato]="platoRecomendado"></app-card>
     </div>
 </div>
+
+<div class="titulos">
+    <h2 id="desayunos">Desayunos</h2>
+</div>
+<div class="desayunos-container">
+    <div class="desayuno" *ngFor="let desayuno of desayunos">
+        <app-card [plato]="desayuno"></app-card>
+    </div>
+</div>
+
+<div class="titulos">
+    <h2 id="almuerzos">Almuerzos</h2>
+</div>
+<div class="almuerzos-container">
+    <div class="almuerzo" *ngFor="let almuerzo of almuerzos">
+        <app-card [plato]="almuerzo"></app-card>
+    </div>
+</div>
+
+<div class="titulos">
+    <h2 id="bebidas">Bebidas</h2>
+</div>
+<div class="bebidas-container">
+    <div class="bebida" *ngFor="let bebida of bebidas">
+        <app-card [plato]="bebida"></app-card>
+    </div>
+</div>
+
+<div class="titulos">
+    <h2 id="comidas">Comidas</h2>
+</div>
+<div class="comidas-container">
+    <div class="comida" *ngFor="let comida of comidas">
+        <app-card [plato]="comida"></app-card>
+    </div>
+</div>
+
+<div class="titulos">
+    <h2 id="entradas">Entradas</h2>
+</div>
+<div class="entradas-container">
+    <div class="entrada" *ngFor="let entrada of entradas">
+        <app-card [plato]="entrada"></app-card>
+    </div>
+</div>
+
+<div class="titulos">
+    <h2 id="menu-infantil">Menu Infantil</h2>
+</div>
+<div class="menu-infantil-container">
+    <div class="menu-infantil" *ngFor="let platoInfantil of menuInfantil">
+        <app-card [plato]="platoInfantil"></app-card>
+    </div>
+</div>
+
